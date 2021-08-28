@@ -36,33 +36,33 @@ const Navbar = () => {
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.dashboard()}
 
-            <a href="#">Dashboard</a>
+            <Link href="#">Dashboard</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.mypets()}
 
-            <a href="#">My Pets</a>
+            <Link href="#">My Pets</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.subscription()}
-            <a href="#">My Subscriptions</a>
+            <Link href="#">My Subscriptions</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.orders()}
 
-            <a href="#">Orders</a>
+            <Link href="#">Orders</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.account()}
-            <a href="#">My Account</a>
+            <Link href="#">My Account</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.addons()}
-            <a href="/">Extra Add-Ons</a>
+            <Link href="/">ExtrLink Add-Ons</Link>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.signout()}
-            <a href="#">Signout</a>
+            <Link href="#">Signout</Link>
           </li>
         </ul>
         {/* </div> */}
