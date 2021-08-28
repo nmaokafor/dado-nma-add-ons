@@ -12,25 +12,22 @@ const Navbar = () => {
     <>
       <nav className={styles.navbar}>
         <div>
-          {/* Logo */}
-
           <div className={styles.logoParent}>
             <Link href="/">
-              {/* <a href="#"> */}
-              <Image
-                src="/assets/images/toplogo.png"
-                layout="responsive"
-                objectFit="contain"
-                className={styles.logo}
-                height={40}
-                width={192}
-                alt="Petlab co logo"
-              />
-              {/* </a> */}
+              <a>
+                <Image
+                  src="/assets/images/toplogo.png"
+                  layout="responsive"
+                  objectFit="contain"
+                  className={styles.logo}
+                  height={40}
+                  width={192}
+                  alt="Petlab co logo"
+                />
+              </a>
             </Link>
           </div>
         </div>
-        {/* Menu */}
         <ul
           className={
             open ? `${styles.navmenu} ${styles.active}` : styles.navmenu

@@ -5,7 +5,10 @@ const ProductList = (props) => {
   return (
     <>
       {props.products.map((prod, index) => (
-        <div className={`${styles["card-wrapper"]} col-4 ${styles.tablet}`}>
+        <div
+          key={index}
+          className={`${styles["card-wrapper"]} col-4 ${styles.tablet}`}
+        >
           <ProductCard product={prod} index={index} />
         </div>
       ))}
