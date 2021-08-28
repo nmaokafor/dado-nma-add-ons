@@ -5,3 +5,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.row-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding: 0 auto;
+}
+
+.mainwrapper {
+  width: 87.5%;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-top: 81px !important;
+  margin-bottom: 81px !important;
+}
