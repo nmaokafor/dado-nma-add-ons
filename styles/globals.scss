@@ -22,6 +22,21 @@ a {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Utopia Std";
+  src: url("/assets/fonts/Adobe\ -\ UtopiaStd-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("/assets/fonts/URW\ Type\ Foundry\ -\ NeuzeitGro-Reg.otf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+
 img {
   max-width: 100%;
   display: block;

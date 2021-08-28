@@ -48,6 +48,18 @@ export default function Home({ products }) {
         <title>Add ons Page</title>
         <meta name="description" content="Get add ons on checkout" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/assets/fonts/Adobe\ -\ UtopiaStd-Regular.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/assets/fonts/URW\ Type\ Foundry\ -\ NeuzeitGro-Reg.otf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
       <Hero />
