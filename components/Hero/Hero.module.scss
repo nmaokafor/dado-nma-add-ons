@@ -1,0 +1,195 @@
+@import "../../public/assets/scss/colors.scss";
+@import "../../public/assets/scss/mixins.scss";
+
+.header {
+  padding: 27px 0;
+  background: #e5e5e5;
+}
+
+.header-row {
+  width: 75vw;
+}
+
+// .cell {
+//   width: 100%;
+// }
+
+// .cell2 {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
+
+.column-one {
+  width: 33.3%;
+  margin-left: auto;
+}
+
+.column-one > div {
+  height: 150px;
+  width: 120px;
+}
+
+.vertical-align {
+  align-self: center;
+}
+
+.column-two {
+  padding: 0 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.header-text {
+  @include text("Utopia Std", normal, 32px, $primaryBlue);
+  line-height: 38.4px;
+  margin: 0;
+}
+
+.column-two > p {
+  @include text("Neuzeit Grotesk", normal, 16px, $primaryRed);
+  line-height: 23.2px;
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .column-two > h3 {
+    font-size: 18px;
+  }
+
+  .column-two > p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 376px) and (min-width: 424px) {
+  .column-two > h3 {
+    font-size: 20px;
+  }
+
+  .column-two > p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  // .row {
+  //   width: 100%;
+  // }
+
+  .header-row {
+    width: 100vw;
+  }
+
+  .col-4 {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  // .row {
+  //   width: 100%;
+  // }
+
+  .header-row {
+    width: 100vw;
+  }
+
+  .col-4 {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: fit-content;
+  }
+  .column-one {
+    width: 100%;
+  }
+
+  .column-one > div {
+    width: 100%;
+  }
+
+  .verticalAlign {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .header {
+    height: fit-content;
+  }
+
+  .col-4 {
+    width: 50%;
+    margin: auto;
+  }
+
+  .col-8 {
+    max-width: 100% !important;
+    margin: auto;
+  }
+
+  .column-two > h3 {
+    font-size: 24px;
+  }
+
+  .column-two > p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 993px) and (min-width: 766px) {
+  .column-one {
+    width: 60%;
+  }
+
+  .column-two > p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1025px) and (min-width: 992px) {
+  // .row {
+  //   width: 100%;
+  // }
+
+  .column-one {
+    width: 50%;
+  }
+
+  .column-two {
+    padding: 0;
+  }
+
+  .column-two > h3 {
+    font-size: 32px;
+  }
+
+  .column-two > p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 766px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
