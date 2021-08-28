@@ -1,0 +1,67 @@
+@import "../../public/assets/scss/colors.scss";
+@import "../../public/assets/scss/mixins.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 79px;
+  background-color: #ffffff;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+// .navlogo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+// }
+
+.logoParent > div {
+  width: 192px;
+  height: 40px;
+}
+.navmenu {
+  padding-left: 55px;
+  padding-right: 34px;
+  display: flex;
+  list-style-type: none;
+  width: 77vw;
+  justify-content: space-around;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: fit-content;
+  cursor: pointer;
+
+  span {
+    margin-right: 4px;
+  }
+}
+
+.navlink {
+  @include text("Utopia Std", normal, 16px, $primaryBlue);
+}
+
+/* .navlink:hover {
+    color: #482ff7;
+  } */
+
+.navlink:active {
+  color: $primaryRed;
+  span {
+    color: $primaryRed;
+  }
+}
+
+.mobile-option {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
