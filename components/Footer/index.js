@@ -1,9 +1,10 @@
 import Image from "next/image";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className={styles.footer}>
+      <div className={styles.footerLogo}>
         <Image
           src={"/assets/images/footer-logo.png"}
           height={1}

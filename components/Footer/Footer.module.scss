@@ -1,0 +1,31 @@
+@import "../../public/assets/scss/colors.scss";
+@import "../../public/assets/scss/mixins.scss";
+
+.footer {
+  background-color: $primaryBlue;
+  margin: 0;
+}
+
+.footerLogo {
+  padding: 80px;
+  height: fit-content;
+}
+
+.footerLogo > div {
+  height: 159px !important;
+  width: 156px !important;
+}
+
+.footer > hr {
+  width: 89%;
+  margin: auto;
+  color: #fcf1e0;
+  opacity: 0.2;
+}
+
+.footer > p {
+  @include text("Neuzeit Grotesk", normal, 14px, #fcf1e0);
+  padding: 16px;
+  margin: auto;
+  width: fit-content;
+}
