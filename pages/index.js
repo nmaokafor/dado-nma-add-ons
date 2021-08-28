@@ -1,10 +1,47 @@
+import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../components/Hero";
+import { ProductFilter } from "../components/ProductFilter";
 import ProductList from "../components/Products/ProductList";
 import styles from "../styles/Home.module.scss";
 
 export default function Home({ products }) {
+  const categories = [
+    "Probiotics",
+    "Mobility",
+    "Skin & Coat",
+    "Health & Wellness",
+    "Dental",
+    "Food",
+  ];
+
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [checkedValues, setCheckedValues] = useState(categories);
+
+  const handleFilter = (category) => {
+    let filteredProducts = [];
+    // If nothing is selected
+    if (category && !category.length) {
+      setFilteredProducts(products);
+    } else {
+      // filter using product list and selected values
+      products.filter((product) => {
+        category.some((item) => {
+          if (product.category === item) {
+            filteredProducts.push(product);
+          }
+        });
+        return product.category === category;
+      });
+      setFilteredProducts(filteredProducts);
+    }
+  };
+
+  const updateCheckedValues = (vals) => {
+    handleFilter(vals);
+    setCheckedValues(vals);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +51,13 @@ export default function Home({ products }) {
       </Head>
 
       <Hero />
+
       <div className={styles.mainwrapper}>
+        <ProductFilter
+          checkedValues={checkedValues}
+          categories={categories}
+          setCheckedValues={updateCheckedValues}
+        />
         <div className={`${styles["row-two"]} main col-12`}>
           <ProductList products={products} />
         </div>

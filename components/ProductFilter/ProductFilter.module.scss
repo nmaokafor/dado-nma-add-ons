@@ -1,0 +1,18 @@
+@import "../../public/assets/scss/colors.scss";
+@import "../../public/assets/scss/mixins.scss";
+
+.filter {
+  padding-left: 14px;
+  padding-right: 14px;
+
+  p {
+    @include text("Utopia std", 600, 16px, $primaryBlue);
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  label {
+    margin-right: 16px;
+    @include text("Neuzeit Grotesk", normal, 16px, $primaryBlue);
+  }
+}
