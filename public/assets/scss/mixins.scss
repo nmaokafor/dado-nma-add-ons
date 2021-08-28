@@ -1,0 +1,34 @@
+@import "./colors.scss";
+
+@mixin text(
+  $fontfamily,
+  $fontweight,
+  $fontsize,
+  $color,
+  $opacity: 1,
+  $text-decoration: none
+) {
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: $fontweight;
+  font-size: $fontsize;
+  color: $color;
+  opacity: $opacity;
+  text-decoration: $text-decoration;
+}
+
+@mixin categoryTag($background-color) {
+  font-family: "Neuzeit Grotesk";
+  font-size: 14px;
+  letter-spacing: 0em;
+  color: $white;
+  background-color: $background-color;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: fit-content;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
