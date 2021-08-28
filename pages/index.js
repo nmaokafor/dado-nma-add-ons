@@ -59,7 +59,7 @@ export default function Home({ products }) {
           setCheckedValues={updateCheckedValues}
         />
         <div className={`${styles["row-two"]} main col-12`}>
-          <ProductList products={products} />
+          <ProductList products={filteredProducts} />
         </div>
       </div>
     </div>

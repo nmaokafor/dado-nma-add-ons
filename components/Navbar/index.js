@@ -61,7 +61,7 @@ const Navbar = () => {
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.addons()}
-            <a href="#">Extra Add-Ons</a>
+            <a href="/">Extra Add-Ons</a>
           </li>
           <li className={styles.navitem} onClick={closeMobileMenu}>
             {SVGS.signout()}
