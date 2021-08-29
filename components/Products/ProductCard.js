@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className={styles.card}>
       <div className={styles["card-top"]}>
-        <p className={`${styles["category-tag"]} ${styles[id]}`}>{category}</p>
+        <p className={`${styles[id]}`}>{category}</p>
         <div className={`${styles["card-image"]}`}>
           <Image
             src={`${image}`}
