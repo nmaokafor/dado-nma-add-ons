@@ -16,7 +16,7 @@ export default function Home({ products }) {
   ];
 
   const [filteredProducts, setFilteredProducts] = useState(products);
-  const [checkedValues, setCheckedValues] = useState(categories);
+  const [checkedValues, setCheckedValues] = useState([]);
 
   const handleFilter = (category) => {
     let filteredProducts = [];
@@ -50,13 +50,13 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
-          href="/assets/fonts/Adobe\ -\ UtopiaStd-Regular.otf"
+          href="/assets/fonts/Utopia/UtopiaStd-Regular.otf"
           as="font"
           crossOrigin=""
         />
         <link
           rel="preload"
-          href="/assets/fonts/URW\ Type\ Foundry\ -\ NeuzeitGro-Reg.otf"
+          href="/assets/fonts/NeuzeitGro/NeuzeitGro-Reg.otf"
           as="font"
           crossOrigin=""
         />

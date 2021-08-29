@@ -9,10 +9,9 @@
 .row-two {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 3rem;
-  padding: 0 auto;
+  padding: 0 25px;
+  margin-top: 0;
 }
 
 .mainwrapper {
@@ -23,18 +22,7 @@
   margin-bottom: 81px !important;
 }
 
-@media only screen and (max-width: 425px) {
-  .row-two {
-    margin-top: 0;
-    display: block;
-  }
-}
-
 @media only screen and (max-width: 768px) and (min-width: 426px) {
-  .row-two {
-    margin-top: 0;
-  }
-
   .mainwrapper {
     width: 90vw;
     margin-right: 0;
@@ -48,10 +36,6 @@
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 1024px) {
-  .row-two {
-    margin-top: 0;
-  }
-
   .mainwrapper {
     margin-right: 0;
     margin-left: 0;

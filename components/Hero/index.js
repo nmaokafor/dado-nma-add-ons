@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <header className={`${utilStyles.container} ${styles.header}`}>
       <div className={`${styles.row} ${styles["header-row"]} col-12`}>
-        {/* <div className={`${styles.cell} col-4`}> */}
         <div className={`col-4`}>
           <div className={styles["column-one"]}>
             <Image
@@ -20,18 +19,15 @@ const Hero = () => {
             />
           </div>
         </div>
-        {/* <div className={`${styles.cell2}  col-8`}> */}
         <div className={`col-8 ${styles["vertical-align"]}`}>
           <div className={`${styles["column-two"]} col-12`}>
-            {/* <div className={`col-12`}> */}
             <h3 className={`${styles["header-text"]}`}>
               Welcome to Extra Add-Ons!
             </h3>
-            {/* </div> */}
 
             <p>
               Here you will find great deals to boost your pet’s health.{" "}
-              <br className={styles.hidden}></br>Same products at a very
+              <br className={styles.break}></br>Same products at a very
               attractive price exclusively to subscribers!
             </p>
           </div>

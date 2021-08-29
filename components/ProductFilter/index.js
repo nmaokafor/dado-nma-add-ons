@@ -9,6 +9,7 @@ export const ProductFilter = ({
   const handleChange = (e) => {
     const { checked, value } = e.target;
     if (checked) {
+      console.log("gimme", checked);
       setCheckedValues(checkedValues.concat(value));
     } else {
       setCheckedValues(checkedValues.filter((item) => item !== value));
@@ -25,7 +26,7 @@ export const ProductFilter = ({
               type="checkbox"
               onChange={handleChange}
               value={value}
-              defaultChecked={true}
+              defaultChecked={false}
             />
             {value}
           </label>

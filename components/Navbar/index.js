@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div>
-          <div className={styles.logoParent}>
+        <div className={styles.logo}>
+          <div className={styles["logo-parent"]}>
             <Link href="/">
               <a>
                 <Image
@@ -30,37 +30,40 @@ const Navbar = () => {
         </div>
         <ul
           className={
-            open ? `${styles.navmenu} ${styles.active}` : styles.navmenu
+            open ? `${styles["nav-menu"]} ${styles.active}` : styles["nav-menu"]
           }
         >
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.dashboard()}
 
             <Link href="#">Dashboard</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.mypets()}
 
             <Link href="#">My Pets</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.subscription()}
             <Link href="#">My Subscriptions</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.orders()}
 
             <Link href="#">Orders</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.account()}
             <Link href="#">My Account</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li
+            className={`${styles["nav-item"]} active`}
+            onClick={closeMobileMenu}
+          >
             {SVGS.addons()}
-            <Link href="/">ExtrLink Add-Ons</Link>
+            <Link href="/">Extra Add-Ons</Link>
           </li>
-          <li className={styles.navitem} onClick={closeMobileMenu}>
+          <li className={styles["nav-item"]} onClick={closeMobileMenu}>
             {SVGS.signout()}
             <Link href="#">Signout</Link>
           </li>

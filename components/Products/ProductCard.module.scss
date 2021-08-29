@@ -4,38 +4,18 @@
 .card {
   padding: 0.5rem;
   text-align: left;
-  // color: inherit;
-  // text-decoration: none;
-
   border: 1px solid #ccd2e3;
-
-  // border: 1px solid #eaeaea;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  /* Primary/blue-20% */
-
   border-radius: 4px;
 }
-
-// .cardTop {
-//   margin-bottom: 20px;
-// }
 
 .card-bottom {
   padding: 1rem;
   padding-top: 0;
 }
-
-// .categoryTag {
-//   margin-left: auto;
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   width: fit-content;
-//   line-height: 21px;
-//   padding: 6px 10px;
-// }
 
 .probiotic-chew {
   @include categoryTag(#704697);

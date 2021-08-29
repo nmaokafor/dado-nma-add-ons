@@ -12,8 +12,8 @@
 }
 
 .footerLogo > div {
-  height: 159px !important;
-  width: 156px !important;
+  height: 159px;
+  width: 156px;
 }
 
 .footer > hr {
@@ -34,5 +34,11 @@
   .footerLogo {
     width: fit-content;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footerLogo > div {
+    width: 100px;
   }
 }

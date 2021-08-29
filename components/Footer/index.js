@@ -10,7 +10,7 @@ const Footer = () => {
           height={1}
           width={1}
           layout="responsive"
-          objectFit="cover"
+          objectFit="contain"
           alt="Petlab co logo"
         />
       </div>

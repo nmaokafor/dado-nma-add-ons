@@ -2,8 +2,14 @@
 @import "../../public/assets/scss/mixins.scss";
 
 .filter {
-  padding-left: 14px;
+  padding-left: 39px;
   padding-right: 14px;
+  width: 50%;
+
+  div {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   p {
     @include text("Utopia std", 600, 16px, $primaryBlue);
@@ -14,5 +20,41 @@
   label {
     margin-right: 16px;
     @include text("Neuzeit Grotesk", normal, 16px, $primaryBlue);
+
+    input {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1156px) {
+  .filter {
+    div {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  .filter {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .filter {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 545px) {
+  .filter {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .filter {
+    div {
+      grid-template-columns: 1fr;
+    }
   }
 }

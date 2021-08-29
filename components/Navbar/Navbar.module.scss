@@ -12,26 +12,22 @@
   z-index: 1000;
 }
 
-// .navlogo {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-evenly;
-// }
-
-.logoParent > a > div {
+.logo-parent > a > div {
   width: 192px;
   height: 40px;
 }
-.navmenu {
-  padding-left: 55px;
-  padding-right: 34px;
+.nav-menu {
+  // padding-left: 55px;
+  // padding-right: 34px;
+  padding: 0;
+  margin-left: 80px;
   display: flex;
   list-style-type: none;
-  width: 77vw;
+  width: 100%;
   justify-content: space-around;
 }
 
-.navitem {
+.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,17 +40,15 @@
   }
 }
 
-.navlink {
+.nav-item {
   @include text("Utopia Std", normal, 16px, $primaryBlue);
 }
 
-/* .navlink:hover {
-    color: #482ff7;
-  } */
-
-.navlink:active {
-  color: $primaryRed;
-  span {
+.nav-item:active {
+  span > svg > path {
+    fill: $primaryRed;
+  }
+  a {
     color: $primaryRed;
   }
 }
@@ -66,58 +60,57 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 992px) {
-  .logoParent > a > div {
-    width: 139px;
-    height: 40px;
+@media only screen and (min-width: 2000px) and (max-width: 2500px) {
+  .nav-menu {
+    width: 70%;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    font-size: 24px;
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 730px) {
-  .logoParent > a > div {
-    width: 110px;
-    height: 22px;
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  .nav-menu {
+    width: 100%;
+    margin-right: auto;
   }
 
-  .navbar {
-    padding: 25px 30px;
+  .nav-item {
+    font-size: 24px;
   }
+}
 
-  .navmenu {
+@media screen and (max-width: 1204px) {
+  .logo-parent > a > div {
+    width: 139px;
+    height: 40px;
+  }
+  .nav-menu {
     padding: 0;
     margin-left: 40px;
     width: 80vw;
   }
 }
 
-@media screen and (max-width: 991px) and (min-width: 647px) {
-  .navlink {
-    span {
-      display: none;
-    }
-  }
-
-  .navlink {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 750px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     padding: 25px 40px;
   }
 
-  .navlink {
-    font-size: 14px;
+  .logo-parent > a > div {
+    width: 139px;
+    height: 40px;
   }
 
-  .logoParent > a > div {
-    width: 110px;
-    height: 22px;
+  .nav-item {
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 749px) and (min-width: 660px) {
-  .logoParent > a > div {
+@media screen and (max-width: 992px) {
+  .logo-parent > a > div {
     width: 110px;
     height: 22px;
   }
@@ -126,44 +119,63 @@
     padding: 25px 30px;
   }
 
-  .navmenu {
+  .nav-menu {
     padding: 0;
-    margin-left: 20px;
+    margin-left: 40px;
     width: 80vw;
   }
 }
 
-@media only screen and (max-width: 648px) {
+@media only screen and (max-width: 873px) {
   .navbar {
-    padding: 0px 10px;
+    margin: 0;
+    padding: 16px 26px;
   }
 
-  .navmenu {
+  .logo {
     display: flex;
     width: 100%;
-    height: 350px;
+    justify-content: center;
+  }
+
+  .logo-parent > a > div {
+    width: 114px;
+    height: 24px;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    height: auto;
     position: absolute;
     top: 80px;
     left: -100%;
+    padding: 0 16px;
     opacity: 0;
     transition: all 0.5s ease;
     flex-direction: column;
     list-style-type: none;
-    grid-gap: 0px;
-    display: grid;
   }
 
-  .navmenu.active {
+  .nav-menu.active {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    padding: 0 16px;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+
     background: #ffffff;
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
     z-index: 1;
     align-content: center;
-    padding-left: 0px;
   }
 
-  .navitem {
+  .nav-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,48 +195,4 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-@media screen and (max-width: 660px) and (min-width: 649px) {
-  .logoParent > a > div {
-    width: 110px;
-    height: 22px;
-  }
-
-  .navlink {
-    font-size: 12px;
-  }
-
-  .navbar {
-    padding: 25px 30px;
-  }
-
-  .navmenu {
-    padding: 0;
-    margin-left: 20px;
-    width: 100vw;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .navbar {
-    margin: 16px 24px;
-  }
-
-  .logoParent > a > div {
-    width: 114px;
-    height: 24px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-}
-
-@media screen and (max-width: 384px) {
-}
-
-@media screen and (max-width: 360px) {
-}
-
-@media screen and (max-width: 320px) {
 }

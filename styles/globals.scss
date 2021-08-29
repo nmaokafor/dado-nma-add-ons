@@ -24,16 +24,16 @@ a {
 
 @font-face {
   font-family: "Utopia Std";
-  src: url("/assets/fonts/Adobe\ -\ UtopiaStd-Regular.otf");
+  src: url("/assets/fonts/Utopia/UtopiaStd-Regular.otf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Neuzeit Grotesk";
-  src: url("/assets/fonts/URW\ Type\ Foundry\ -\ NeuzeitGro-Reg.otf");
+  src: url("/assets/fonts/NeuzeitGro/NeuzeitGro-Reg.otf");
   font-style: medium;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -51,20 +51,9 @@ img {
   width: 100%;
   background-color: $primaryRed;
   padding: 10px 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
-
-// .main {
-//   width: 75%;
-//   margin-top: 81px !important;
-//   margin-bottom: 81px !important;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   max-width: 800px;
-//   margin-top: 3rem;
-// }
 
 .container {
   width: 100vw;
@@ -176,21 +165,7 @@ img {
   }
 }
 
-// @media (min-width: 576px) {
-//   .container {
-//     max-width: 540px;
-//   }
-// }
-// @media (min-width: 768px) {
-//   .container {
-//     max-width: 720px;
-//   }
-// }
 @media (min-width: 992px) {
-  // .container {
-  //   max-width: 960px;
-  // }
-
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,7 +179,4 @@ img {
   .container {
     max-width: 1140px;
   }
-}
-
-@media (min-width: 766px) {
 }
