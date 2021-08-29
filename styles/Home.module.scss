@@ -51,9 +51,14 @@
   padding: 14px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 476px) {
   .row-two {
     margin-top: 0;
     display: block;
+    padding: 0;
+  }
+
+  .mainwrapper {
+    width: 100%;
   }
 }
