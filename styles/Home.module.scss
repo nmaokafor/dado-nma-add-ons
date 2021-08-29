@@ -50,3 +50,10 @@
 .col-4 {
   padding: 14px;
 }
+
+@media only screen and (max-width: 425px) {
+  .row-two {
+    margin-top: 0;
+    display: block;
+  }
+}
